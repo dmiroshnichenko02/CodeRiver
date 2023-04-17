@@ -1,0 +1,58 @@
+// Variables
+@import "./libs/variables.scss";
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+    font-family: "Garagin";
+    src: url(../assets/fonts/GaraginRockLite.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $body_bg;
+}
+
+header,
+main {
+    background-color: $background;
+    width: 1350px;
+    margin: 0 auto;
+}
+header {
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25);
+    margin: 101px auto 0 auto;
+}
+main {
+    margin-bottom: 181px;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 1s, transform 1s;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@import './libs/media.scss';

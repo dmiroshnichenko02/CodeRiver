@@ -1,0 +1,194 @@
+// Large Devices
+@media only screen and (max-width: 1200px) {
+    header,
+    main {
+        box-shadow: none;
+        width: 100%;
+        margin: 0;
+    }
+    .container {
+        width: 960px;
+    }
+    .header__nav_menu_item {
+        margin-left: 80px;
+    }
+    .welcome__wrapper {
+        justify-content: space-around;
+    }
+    .welcome__create {
+        margin-right: 30px;
+        font-size: 170px;
+        width: 426px;
+        height: 680px;
+    }
+    .welcome__mobile_android {
+        left: 105px;
+    }
+    .welcome__mobile_apple {
+        position: absolute;
+        content: "";
+        left: 60px;
+    }
+    .welcome__mobile_title {
+        position: absolute;
+        content: "";
+        top: 60px;
+        left: 57px;
+    }
+    .welcome__title {
+        margin-top: 275px;
+        font-size: 80px;
+        span {
+            left: 273px;
+            top: 103px;
+            width: 190px;
+            height: 113px;
+            &::after {
+                right: -15px;
+            }
+        }
+    }
+    .main {
+        padding: 65px 0 89px 0;
+        box-shadow: none;
+    }
+    .main__wrapper {
+        padding: 41px 0 81px 0;
+    }
+    .main__about_descr {
+        width: 800px;
+    }
+    .main .slider__btn__next {
+        top: -150px;
+        right: -15px;
+        width: 55px;
+        height: 55px;
+    }
+    .main .slider__btn__prev {
+        top: -150px;
+        left: -15px;
+        width: 55px;
+        height: 55px;
+    }
+    .main__slider .slide img {
+        width: 220px;
+        height: 230px;
+        object-fit: cover;
+    }
+}
+// Medium Devices
+@media only screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+    .header__nav_menu_item {
+        margin-left: 30px;
+    }
+    .header__nav .logotype {
+        font-size: 70px;
+    }
+    .header__nav_menu_buy {
+        width: 86px;
+        height: 86px;
+    }
+    .welcome {
+        padding-top: 15px;
+    }
+    .welcome__mobile_android {
+        left: 75px;
+    }
+    .welcome__mobile_apple {
+        left: 30px;
+    }
+    .welcome__mobile_title {
+        left: 27px;
+    }
+    .welcome__title {
+        font-size: 60px;
+        width: 343px;
+        line-height: 86px;
+        span {
+            left: 188px;
+            top: 83px;
+            width: 130px;
+            height: 83px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .welcome__create {
+        width: 366px;
+        font-size: 160px;
+        margin-right: 0;
+        height: 565px;
+    }
+    .main__title,
+    .main__about {
+        font-size: 55px;
+    }
+    .main__slider .slide img {
+        width: 180px;
+        height: 210px;
+    }
+    .main__about_descr {
+        width: 600px;
+    }
+}
+// Small Devices, Tablets
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .welcome__mobile {
+        display: none;
+    }
+    .welcome__wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .welcome__title {
+        margin-top: 20px;
+    }
+    .welcome__line img {
+        top: 50px;
+    }
+    .main__title,
+    .main__about {
+        font-size: 50px;
+    }
+    .main__about_descr {
+        width: 400px;
+    }
+    .main .slider__btn {
+        display: none;
+    }
+}
+// Extra small Devices, Phones
+@media only screen and (max-width: 480px) {
+    .welcome__title {
+        width: 100%;
+        font-size: 53px;
+    }
+    .welcome__title span {
+        left: 205px;
+        top: 89px;
+        width: 110px;
+        height: 73px;
+    }
+    .welcome__create {
+        width: 500px;
+        font-size: 130px;
+        height: 100%;
+        object-fit: contain;
+    }
+    .main__title,
+    .main__about {
+        font-size: 40px;
+    }
+    .main__about_descr {
+        width: 250px;
+        font-size: 14px;
+    }
+}
